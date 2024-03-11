@@ -1,0 +1,43 @@
+
+
+
+body{
+	font-family: Raleway, sans-serif;
+	margin:0;
+	padding: 0;
+
+}
+
+.logo img{
+	position:absolute;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+nav{
+	width: 100%;
+	overflow: auto;
+}
+
+nav a{
+	width: 100px;
+	display: block;
+	text-align: center;
+	padding: 20px 15px;
+}
+
+nav a:hover{
+	transition: 0.5s;
+	text-transform: uppercase;
+}
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+
+li{
+	float:right;
+	margin-right: 10px;
+}

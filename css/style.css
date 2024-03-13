@@ -34,6 +34,11 @@ body{
 	flex-direction: row;
 }
 
+.search-button{
+	border-radius: 0px 10px 10px 0;
+	background-color: #0065FC;
+}
+
 .flex-filters{
 	display: flex;
 	flex-direction: row;
@@ -43,14 +48,15 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	background-color: #F2F2F2;
+	width:max-content;
 }
 
 .accommodation-item{	
-	height: 300px;
-	width:150px;
-	border-radius:10px;
+/* 	height: 150px;
+	width:300px;
+ */	border-radius:10px;
     /* To correctly align image, regardless of content height: */
     vertical-align: top;
     display: inline-flexbox;
@@ -62,20 +68,21 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	background-color: #F2F2F2;
 
 }
 
 .most-popular-item{
-	height: 300px;
-	width:150px;
+	height: 150px;
+	width:300px;
 	border-radius:10px;
     /* To correctly align image, regardless of content height: */
-    vertical-align: top;
+    vertical-align: text-bottom;
     display: inline-flexbox;
     /* To horizontally center images and caption */
     text-align: left;
+	padding: 10px;
 
 }
 
@@ -83,14 +90,14 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	background-color: #F2F2F2;
 
 }
 
 .activities-item{
-	height: 300px;
-	width:150px;
+	height: 150px;
+	width:300px;
 	border-radius:10px;
     /* To correctly align image, regardless of content height: */
     vertical-align: top;
@@ -104,5 +111,6 @@ img {
     min-width: 300px;
     max-height: 150px;
     background-color: grey;
+	border-radius: 10px;
 
 }

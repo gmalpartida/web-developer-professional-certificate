@@ -1,43 +1,108 @@
 
-
-
 body{
+	display: flex;
 	font-family: Raleway, sans-serif;
 	margin:0;
 	padding: 0;
+	flex-direction: column;
+}
+
+.flex-header{
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	min-height: fit-content;
+}
+
+.header-link{
+	padding:10px;
+}
+
+.flex-footer{
+	display: flex;
+	flex-direction: row;
+	height: auto;
+}
+
+.flex-page{
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-search{
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-filters{
+	display: flex;
+	flex-direction: row;
+}
+
+.accommodations-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+}
+
+.accommodation-item{	
+	height: 300px;
+	width:150px;
+	border-radius:10px;
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-flexbox;
+    /* To horizontally center images and caption */
+    text-align: left;
+}
+
+.most-popular-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #F2F2F2;
 
 }
 
-.logo img{
-	position:absolute;
-	margin-top: 15px;
-	margin-left: 10px;
+.most-popular-item{
+	height: 300px;
+	width:150px;
+	border-radius:10px;
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-flexbox;
+    /* To horizontally center images and caption */
+    text-align: left;
+
 }
 
-nav{
-	width: 100%;
-	overflow: auto;
+.activities-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+
 }
 
-nav a{
-	width: 100px;
-	display: block;
-	text-align: center;
-	padding: 20px 15px;
+.activities-item{
+	height: 300px;
+	width:150px;
+	border-radius:10px;
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-flexbox;
+    /* To horizontally center images and caption */
+    text-align: left;
+
 }
 
-nav a:hover{
-	transition: 0.5s;
-	text-transform: uppercase;
-}
+img {
+    min-width: 300px;
+    max-height: 150px;
+    background-color: grey;
 
-ul{
-	margin:0;
-	padding: 0;
-	list-style:none;
-}
-
-li{
-	float:right;
-	margin-right: 10px;
 }

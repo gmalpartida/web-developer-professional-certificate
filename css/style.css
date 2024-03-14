@@ -10,18 +10,26 @@ body{
 .flex-header{
 	display: flex;
 	flex-direction: row;
-	height: auto;
-	min-height: fit-content;
+	flex-wrap: wrap;
+	width:768;
+	border-style: dashed;
 }
 
-.header-link{
-	padding:10px;
+.header-links{
+	display: flex;
+	align-self:self-end;
+	border-style: dashed;
+}
+
+.header-link-item{
+	padding: 10px;	
 }
 
 .flex-footer{
 	display: flex;
 	flex-direction: row;
 	height: auto;
+	justify-content: space-evenly;
 }
 
 .flex-page{
@@ -50,7 +58,7 @@ body{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	background-color: #F2F2F2;
-	width:max-content;
+	width:auto;	
 }
 
 .accommodation-item{	
@@ -70,7 +78,7 @@ body{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	background-color: #F2F2F2;
-
+	width: auto
 }
 
 .most-popular-item{
@@ -92,7 +100,7 @@ body{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	background-color: #F2F2F2;
-
+	width: auto;
 }
 
 .activities-item{
@@ -104,7 +112,7 @@ body{
     display: inline-flexbox;
     /* To horizontally center images and caption */
     text-align: left;
-
+	padding:10px;
 }
 
 img {

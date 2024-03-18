@@ -7,11 +7,16 @@ body{
 	flex-direction: column;
 }
 
+.header-container{
+margin: auto;
+width: 95%;
+}
+
 .flex-header{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width:768;
+	/* width:768; */
 	border-style: dashed;
 }
 
@@ -25,11 +30,33 @@ body{
 	padding: 10px;	
 }
 
+.footer{
+	/*margin:auto;*/
+	/*border-style: dashed;*/
+}
+
 .flex-footer{
 	display: flex;
 	flex-direction: row;
 	height: auto;
 	justify-content: space-evenly;
+	margin: auto;
+	width:95%;
+}
+
+.footer-column{
+
+
+}
+
+.footer-list{
+	list-style: none;
+	justify-content: left;
+}
+
+.page-container{
+	margin: auto;
+	width: 95%;
 }
 
 .flex-page{
@@ -70,6 +97,12 @@ body{
     display: inline-flexbox;
     /* To horizontally center images and caption */
     text-align: left;
+}
+
+.flex-page-main{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
 }
 
 .most-popular-container{
@@ -118,7 +151,6 @@ body{
 img {
     min-width: 300px;
     max-height: 150px;
-    background-color: grey;
 	border-radius: 10px;
 
 }

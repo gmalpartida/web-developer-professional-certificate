@@ -31,8 +31,8 @@ width: 95%;
 }
 
 .footer{
-	/*margin:auto;*/
-	/*border-style: dashed;*/
+	margin:auto;
+	border-style: dashed;
 }
 
 .flex-footer{
@@ -40,8 +40,10 @@ width: 95%;
 	flex-direction: row;
 	height: auto;
 	justify-content: space-evenly;
-	margin: auto;
+/* 	margin: auto;
 	width:95%;
+ */	flex-wrap: wrap;
+	border-style: dashed;
 }
 
 .footer-column{

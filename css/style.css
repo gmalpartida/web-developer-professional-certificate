@@ -33,6 +33,12 @@ width: 95%;
 .footer{
 	margin:auto;
 	border-style: dashed;
+	width: 95%;
+}
+
+.footer-container{
+	margin:auto;
+	width: 95%;
 }
 
 .flex-footer{

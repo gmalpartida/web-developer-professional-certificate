@@ -18,6 +18,7 @@ width: 95%;
 	flex-wrap: wrap;
 	/* width:768; */
 	border-style: dashed;
+	justify-content: space-around;
 }
 
 .header-links{

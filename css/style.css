@@ -31,7 +31,7 @@ header{
 
 .card-container {
     display: flex;
-    background-color: gray;
+    background-color: #F2F2F2;
     border-radius: 10px;
     flex-direction: row;
     /* justify-content: center; */
@@ -77,18 +77,18 @@ header{
 .card-image img {
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .accommodations-container{
-    background-color: gray;
+    background-color: #F2F2F2;
     border-radius: 10px;
     margin-top: 10px;
 }
 
 .most-popular-container{
     margin-top: 10px;
-    background-color: gray;
+    background-color: #F2F2F2;
     border-radius: 10px;
 }
 
@@ -107,14 +107,14 @@ header{
 .footer{
 	margin:auto;
 	/* width: 95%; */
-    background-color: gray;
+    background-color: #F2F2F2;
     border-style: dashed;
 }
 
 .footer-container{
 	margin:auto;
 	/* width: 95%; */
-    background-color: gray;
+    background-color: #F2F2F2;
 }
 
 .flex-footer{
@@ -125,7 +125,7 @@ header{
 /* 	margin: auto;
 	width:95%;
  */	flex-wrap: wrap;
- background-color: gray;
+    background-color: #F2F2F2;
 }
 
 .footer-column{
@@ -136,4 +136,65 @@ header{
 .footer-list{
 	list-style: none;
 	justify-content: left;
+}
+
+.checked{
+    color: blue;
+}
+
+.card-text-line{
+    line-height: 0.5;
+}
+
+.star-rating{
+    color: lightgray;
+}
+
+.card-text-line-first{
+    font-weight: bold;
+    font-size: large;
+}
+
+.search-button{
+	border-radius: 0px 10px 10px 0;
+	background-color:#0065FC;
+	min-height: 30px;
+	color:white;
+	min-width: 30px;;
+}
+
+.money-span{
+	color: #0065FC;
+	text-align: center;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	align-content: center;
+    height: 30px;
+    width:30px;
+}
+
+.location-span{
+	min-width: 30px;
+	color: #0065FC;
+	text-align: center;
+	background-color: #F2F2F2;
+	border-radius: 10px 0px 0px 10px;
+	min-height: 30px;
+	align-content: center;
+}
+.input-field{
+	width: 300px;
+	text-align: center;
+	min-height: 30px;
+	border-style:none;
+	border-radius: 15px;
+}
+
+.filter-button{
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+    height: 30px;
+    width:150px;
+    text-align: left;
+    margin-left: 10px;
 }

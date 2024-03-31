@@ -51,14 +51,17 @@ header{
     margin-bottom: 10px;
 }
 
-.card {
-    
+.card {    
     background-color: white;
     height: 200px;
     width: 300px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 2px lightgray;
+}
+
+.card a:link{
+    text-decoration: none;
 }
 
 .card-image {
@@ -72,6 +75,7 @@ header{
     height: 50%;
     width: 95%;
     margin: auto;
+    color: black;
 }
 
 .card-image img {
@@ -163,6 +167,10 @@ header{
 	min-width: 30px;;
 }
 
+.search-field{
+    margin-bottom: 10px;
+}
+
 .money-span{
 	color: #0065FC;
 	text-align: center;
@@ -171,6 +179,9 @@ header{
 	align-content: center;
     height: 30px;
     width:30px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 1px;
 }
 
 .location-span{
@@ -181,6 +192,7 @@ header{
 	border-radius: 10px 0px 0px 10px;
 	min-height: 30px;
 	align-content: center;
+    margin-left: 20px;
 }
 .input-field{
 	width: 300px;
@@ -194,7 +206,14 @@ header{
 	border-radius: 10px 10px 10px 10px;
 	background-color: white;
     height: 30px;
-    width:150px;
+    width: 125px;px;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 15px;
+    padding-left: 30px;    
+    border-color: #F2F2F2;
+    border-width: 1px;
+}
+
+.filter-button:hover{
+    border-color: black;
 }

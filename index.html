@@ -40,9 +40,9 @@
             <div><img class="logo-img" src="images/logo/Booki.png"></div>
             
             <div class="header-links">
-                <div class="header-link-item"><a href="#">Accommodations</a></div>
+                <div class="header-link-item"><a href="#accommodations-section">Accommodations</a></div>
 
-                <div class="header-link-item"><a href="#">Activities</a></div>
+                <div class="header-link-item"><a href="#activities-section">Activities</a></div>
             </div>
         </div>
     </header>
@@ -50,32 +50,71 @@
     <main>
         <div><p><h3>Find a place for your dream vacation</h3></p></div>
         <div><p>Downtown or in nature</p></div>
+        <form>
         <div class="search-field">                    
             <span class="fa-solid fa-location-dot location-span"></span>
             <input type="search" class="input-field"/>
             <button class="search-button">Search</button>
         </div>
+    </form>
 
         <div class="flex-filters">
             <label>Filters</label>            
-            <button class="filter-button"><span class="fa-solid fa-money-bill-wave money-span"></span>Low Cost</button>
-            <button class="filter-button"><span class="fa-solid fa-money-bill-wave money-span"></span>Family-friendly</button>
-            <button class="filter-button"><span class="fa-solid fa-money-bill-wave money-span"></span>Romantic</button>
-            <button class="filter-button"><span class="fa-solid fa-money-bill-wave money-span"></span>Pets-allowed</button>
+            <span class="fa-solid fa-money-bill-wave money-span"></span><button class="filter-button">Low Cost</button>
+            <span class="fa-solid fa-child-reaching money-span"></span><button class="filter-button">Family-friendly</button>
+            <span class="fa-solid fa-heart money-span"></span><button class="filter-button"></span>Romantic</button>
+            <span class="fa-solid fa-dog money-span"></span><button class="filter-button"></span>Pets-allowed</button>
         </div>
 
         <div><p>More than 500 accommodations are available in this city</p></div>
-    <div class="accommodations-container">
+    <div class="accommodations-container" id="accommodations-section">
     <div class="card-title">Accommodations in Marseille</div>
     <div class="card-container"> 
 
         <div class="card">
-            <div class="card-image">
-                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Auberge la Cannebiere</p>
-                <p class="card-text-line">Night starting at 25</p>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Auberge la Cannebiere</p>
+                    <p class="card-text-line">Night starting at 25</p>
+                        <p class="card-text-line">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star star-rating"></span>
+                        </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Hotel du port</p>
+                    <p class="card-text-line">Night starting at 52</p>
+                    <p class="card-text-line">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Les mouettes Hotel</p>
+                    <p class="card-text-line">Night starting at 76</p>
                     <p class="card-text-line">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -83,87 +122,62 @@
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star star-rating"></span>
                     </p>
-            </div>
+                </div>
+            </a>
         </div>
         <div class="card">
-            <div class="card-image">
-                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Hotel du port</p>
-                <p class="card-text-line">Night starting at 52</p>
-                <p class="card-text-line">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </p>
-        </div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Les mouettes Hotel</p>
-                <p class="card-text-line">Night starting at 76</p>
-                <p class="card-text-line">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star star-rating"></span>
-                </p>
-            </div>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Hotel de la mer</p>
+                    <p class="card-text-line">Night starting at 46</p>
+                    <p class="card-text-line">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star star-rating"></span>
+                        <span class="fa fa-star star-rating"></span>
+                    </p>
+                </div>
+            </a>
         </div>
         <div class="card">
-            <div class="card-image">
-                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Hotel de la mer</p>
-                <p class="card-text-line">Night starting at 46</p>
-                <p class="card-text-line">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star star-rating"></span>
-                    <span class="fa fa-star star-rating"></span>
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Auberge Le Panier</p>
-                <p class="card-text-line">Night starting at 23</p>
-                <p class="card-text-line">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star star-rating"></span>
-                </p>
-            </div>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Auberge Le Panier</p>
+                    <p class="card-text-line">Night starting at 23</p>
+                    <p class="card-text-line">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star star-rating"></span>
+                    </p>
+                </div>
+            </a>
         </div>        
         <div class="card">
-            <div class="card-image">
-                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Hotel chez Amina</p>
-                <p class="card-text-line">Night starting at 96</p>
-                <p class="card-text-line">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </p>
-            </div>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Hotel chez Amina</p>
+                    <p class="card-text-line">Night starting at 96</p>
+                    <p class="card-text-line">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                </div>
+            </a>
         </div>        
     </div> <!-- card-container -->
     <div class="card-title">Show More</div>
@@ -174,7 +188,6 @@
     <div class="card-container"> 
         
         <div class="card">
-            
             <div class="card-image">
                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
             </div>
@@ -226,57 +239,69 @@
     </div> <!-- card-container -->
 </div> <!-- end most popular container -->
 
-<div class="activities-container">
+<div class="activities-container" id="activities-section">
     <div class="card-title">Activities in Marseille</div>
     <div class="card-container-activities"> 
 
         <div class="card">
-            <div class="card-image">
-                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Old Port</p>
-            </div>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Old Port</p>
+                </div>
+            </a>
         </div>
         <div class="card">
-            <div class="card-image">
-                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Pomegues Fort</p>
-            </div>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Pomegues Fort</p>
+                </div>
+            </a>
         </div>
         <div class="card">
-            <div class="card-image">
-                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Frioul Island</p>
-            </div>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Frioul Island</p>
+                </div>
+            </a>
         </div>
         <div class="card">
-            <div class="card-image">
-                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Calanques National Park</p>
-            </div>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Calanques National Park</p>
+                </div>
+            </a>
         </div>
         <div class="card">
-            <div class="card-image">
-                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Longchamp Park</p>
-            </div>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Longchamp Park</p>
+                </div>
+            </a>
         </div>
         <div class="card">
-            <div class="card-image">
-                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-            </div>
-            <div class="card-text">
-                <p class="card-text-line card-text-line-first">Notre-Dame-de-la-Garde</p>
-            </div>
+            <a href="#">
+                <div class="card-image">
+                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                </div>
+                <div class="card-text">
+                    <p class="card-text-line card-text-line-first">Notre-Dame-de-la-Garde</p>
+                </div>
+            </a>
         </div>
 
     </div> <!-- card-container -->    

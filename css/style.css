@@ -84,16 +84,29 @@ header{
     border-radius: 5px 5px 0px 0px;
 }
 
+.accommodations-most-popular-container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
 .accommodations-container{
     background-color: #F2F2F2;
     border-radius: 10px;
     margin-top: 10px;
+	display: flex;
+	flex-basis: 55%;
+	flex-direction: column;
 }
 
 .most-popular-container{
     margin-top: 10px;
     background-color: #F2F2F2;
     border-radius: 10px;
+	display: flex;
+	flex-basis: 40%;
+	margin-left: 10px;
+	flex-direction: column;
 }
 
 .activities-container{
@@ -171,19 +184,6 @@ header{
     margin-bottom: 10px;
 }
 
-.money-span{
-	color: #0065FC;
-	text-align: center;
-	background-color: #DEEBFF;
-	border-radius: 50%;
-	align-content: center;
-    height: 30px;
-    width:30px;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 1px;
-}
-
 .location-span{
 	min-width: 30px;
 	color: #0065FC;
@@ -202,18 +202,36 @@ header{
 	border-radius: 15px;
 }
 
+.flex-filters{
+	display: inline-flex;
+	gap: 10px;
+	height: 40px;
+	align-items: center;
+}
+
 .filter-button{
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 50px 50px 50px 50px;
 	background-color: white;
-    height: 30px;
-    width: 125px;px;
-    text-align: left;
-    margin-left: 15px;
-    padding-left: 30px;    
-    border-color: #F2F2F2;
-    border-width: 1px;
+	gap: 10px;
+	padding:0px;
+	height: 100%;
+	border-color: lightgrey;
+	border-style:solid;;
 }
 
 .filter-button:hover{
     border-color: black;
+}
+
+.filter-icon-span{
+	color: #0065FC;
+	border-radius: 50%;
+	background-color: #DEEBFF;
+	align-content: center;
+	height: 40px;
+	width: 40px;
+}
+
+.filter-text-span{
+	align-content: center;
 }

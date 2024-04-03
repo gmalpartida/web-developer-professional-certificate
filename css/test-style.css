@@ -6,25 +6,40 @@ body{
 }
 
 .filter-button-wrapper{
-	height: 50px;
-	background-color: lightblue;
+	background-color: white;
 	display: flex;
+	align-items: center;
 }
 
 .filter-button{
-	border-radius: 10px;
-	height: 100%;
-	background-color: gray;
-	padding-left: -2px;
+	border-radius: 10px;	
+	display: flex;
+ 	align-items: center; 
+	height: 30px;
+	width:auto;
+	border-style: solid;
+	border-color: lightgray;
+	margin-left: 50px;
+}
+
+.filter-button:hover{
+	background-color:lightgray;
 }
 
 .filter-span-icon{
-	color: blue;
-	background-color: lightblue;
-	height: 100%;
-	width: 50px;
+	color: #0065fc;
+	background-color: #DEEBFF; 
 	border-radius: 50%;
-	margin-left: 0px;
+	height: 30px;
+	width: 30px;
+	display: flex;
 	align-items: center;
-	align-content: center;
+	justify-content: center;
+	margin-left: -10px;
+}
+
+.filter-span-text{
+	font-size:small;
+	font-weight: bold;
+	margin-left: 5px;
 }

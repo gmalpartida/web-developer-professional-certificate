@@ -203,48 +203,16 @@ header{
 }
 
  .flex-filters{
-	display: inline-flex;
 	gap: 10px;
 	height: 30px;
-	align-items: center;
 } 
 
-/* .filter-button{
-	border-radius: 50px 50px 50px 50px;
-	background-color: white;
-	gap: 10px;
-	padding:0px;
-	height: 100%;
-	border-color: lightgrey;
-	border-style:solid;;
-}
-
-.filter-button:hover{
-    border-color: black;
-}
-
-.filter-icon-span{
-	color: #0065FC;
-	border-radius: 50%;
-	background-color: #DEEBFF;
-	align-content: center;
-	height: 40px;
-	width: 40px;
-}
-
-.filter-text-span{
-	align-content: center;
-}
- */
 .filter-button{
 	border-radius: 10px;	
-	display: flex;
- 	align-items: center; 
 	height: 30px;
 	width:auto;
 	border-style: solid;
 	border-color: lightgray;
-	margin-left: 50px;
 }
 
 .filter-button:hover{
@@ -257,14 +225,11 @@ header{
 	border-radius: 50%;
 	height: 30px;
 	width: 30px;
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	margin-left: -10px;
+	display: inline-flex;
 }
 
 .filter-text-span{
 	font-size:small;
 	font-weight: bold;
-	margin-left: 5px;
 }

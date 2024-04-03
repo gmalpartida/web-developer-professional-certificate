@@ -9,17 +9,18 @@ body{
 	background-color: white;
 	display: flex;
 	align-items: center;
+	margin-left: 50px;
 }
 
 .filter-button{
 	border-radius: 10px;	
-	display: flex;
- 	align-items: center; 
 	height: 30px;
 	width:auto;
 	border-style: solid;
 	border-color: lightgray;
-	margin-left: 50px;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
 }
 
 .filter-button:hover{
@@ -32,10 +33,9 @@ body{
 	border-radius: 50%;
 	height: 30px;
 	width: 30px;
+	margin-left: -10px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	margin-left: -10px;
 }
 
 .filter-span-text{

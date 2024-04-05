@@ -231,27 +231,35 @@ header{
  .flex-filters{
 	gap: 10px;
 	height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 } 
 
 .filter-button{
-	border-radius: 10px;	
+	border-radius: 20px 15px 15px 20px;	
 	height: 100%;
 	width:auto;
 	border-style: solid;
 	border-color: lightgray;
-    padding: 0px;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding-left: 0%;
 }
 
 .filter-button:hover{
 	background-color:lightgray;
+    cursor: pointer;
 }
 
 .filter-icon-span{
 	color: #0065fc;
 	background-color: #DEEBFF; 
 	border-radius: 50%;
-	height: 100%;
-	width: 30px;
+	height: 31px;
+	width: 31px;
 	align-items: center;
 	display: flex;
     justify-content: center;
@@ -261,4 +269,6 @@ header{
 .filter-text-span{
 	font-size:small;
 	font-weight: bold;
+    height: 100%;
+    width: auto;
 }

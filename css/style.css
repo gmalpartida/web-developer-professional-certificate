@@ -235,10 +235,11 @@ header{
 
 .filter-button{
 	border-radius: 10px;	
-	height: 30px;
+	height: 100%;
 	width:auto;
 	border-style: solid;
 	border-color: lightgray;
+    padding: 0px;
 }
 
 .filter-button:hover{
@@ -249,10 +250,12 @@ header{
 	color: #0065fc;
 	background-color: #DEEBFF; 
 	border-radius: 50%;
-	height: 30px;
+	height: 100%;
 	width: 30px;
 	align-items: center;
-	display: inline-flex;
+	display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .filter-text-span{

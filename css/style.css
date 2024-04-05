@@ -54,21 +54,44 @@ header{
 .card {    
     background-color: white;
     height: 200px;
-    width: 300px;
+    /* width: 300px; */
     margin: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 2px lightgray;
+    flex-basis: 30%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    display: flex;
 }
 
 .card a:link{
     text-decoration: none;
+    width: 100%;
+}
+
+.most-popular-card{
+    display: flex;
+    flex-basis: 66%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.accommodations-card{
+    display: flex;
+    flex-basis: 30%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    justify-content:left;
 }
 
 .card-image {
     height: 50%;
     width: 95%;
-    margin-left: 10px;
+/*     margin-left: 10px;
     margin-top: 10px;
+ */
+    margin:auto;
+
 }
 
 .card-text {
@@ -95,7 +118,7 @@ header{
     border-radius: 10px;
     margin-top: 10px;
 	display: flex;
-	flex-basis: 55%;
+	flex-basis: 65%;
 	flex-direction: column;
 }
 
@@ -104,7 +127,7 @@ header{
     background-color: #F2F2F2;
     border-radius: 10px;
 	display: flex;
-	flex-basis: 40%;
+	flex-basis: 30%;
 	margin-left: 10px;
 	flex-direction: column;
 }
@@ -157,14 +180,17 @@ header{
 
 .checked{
     color: blue;
+    font-size: small;
 }
 
 .card-text-line{
-    line-height: 0.5;
+    font-size: small;
+    line-height: 90%;
 }
 
 .star-rating{
     color: lightgray;
+    font-size: small;
 }
 
 .card-text-line-first{

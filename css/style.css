@@ -258,12 +258,14 @@ header{
 	color: #0065fc;
 	background-color: #DEEBFF; 
 	border-radius: 50%;
-	height: 31px;
-	width: 31px;
+	height: 30px;
+	width: 30px;
 	align-items: center;
 	display: flex;
     justify-content: center;
     align-content: center;
+    position: relative;
+    margin-left: -2px;
 }
 
 .filter-text-span{

@@ -1,0 +1,268 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Raleway", sans-serif;
+        }
+        .panel-title{
+            padding: 10px;
+        }
+        .accommodations-most-popular-panel{
+            display: flex;
+            flex-direction: row;
+            gap:20px;
+        }
+        .accommodations-panel{
+            background-color: #F2F2F2;
+            display: flex;
+            flex-basis: 66%;
+            flex-direction: column;
+            border-radius: 15px 15px 15px 15px;
+        }
+        .most-popular-panel{
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 33%;
+            object-fit: cover;
+            border-radius: 15px 15px 15px 15px;
+        }
+        .card{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            object-fit: cover;
+            flex-grow: 1;
+            flex-basis: 30%;
+            border-radius: 15px 15px 15px 15px;
+        }
+        .card-most-popular{
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            object-fit: cover;
+            flex-grow: 1;
+            /* flex-basis: 100%; */
+            width: 95%;
+            height: 100px;
+            flex-basis: auto;
+            gap:5px;
+            border-radius: 15px 15px 15px 15px;
+        }
+        a{
+            text-decoration: none;
+            color:black
+        }
+        .card-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap:5px;
+            flex-basis: 30%;
+            padding: 10px;
+        }
+        .card-container-most-popular{
+            display: flex;
+            flex-direction: column;
+            gap:5px;
+            flex-basis: 100%;
+            padding: 10px;
+        }
+        .card-container img{
+            border-radius: 15px 15px 0px 0px;
+            max-width: 95%;
+            height: auto;
+            object-fit: cover;
+            margin: auto;
+            padding-top: 5px;
+        }
+        .card-container-most-popular img{
+            border-radius: 15px 0px 0px 15px;
+            width:150px;
+            max-height: auto;
+            object-fit: cover;
+            /* margin: auto; */
+            padding: 5px;
+        }
+        .card-text{
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 768px){
+            .card-container{
+                flex-direction: column;
+                flex-basis: 100%;
+            }
+            .accommodations-most-popular-panel{
+                flex-wrap: wrap-reverse;
+                flex-direction: column;
+            }
+            .card-most-popular{
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                object-fit: cover;
+                flex-grow: 1;
+                flex-basis: 95%;
+                border-radius: 15px 15px 15px 15px;
+            }
+            .card-container-most-popular{
+                display: flex;
+                flex-direction: column;
+                gap:5px;
+                flex-basis: auto;
+                padding: 10px;
+                max-height: 33%;
+            }
+            .card-container-most-popular img{
+                border-radius: 15px 15px 0px 0px;
+                width:auto;
+                max-height: 50%;
+                object-fit: cover;
+                /* margin: auto; */
+                padding: 5px;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/59f51cd5a8.js" crossorigin="anonymous"></script>    
+</head>
+
+<body>
+
+    <header>
+    </header>
+    <main>
+        <div class="accommodations-most-popular-panel">
+            <div class="accommodations-panel">
+                <h3 class="panel-title">Accommodations</h3>
+                <div class="card-container">
+                    <a href="#" class="card">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge">
+                        <h4>Auberge la Cannebiere</h4> 
+                        <p>Night starting at 25<span>&#8364;</span> </p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star star-rating"></span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                        <h4>Hotel du port</h4> 
+                        <p>Night starting at 52<span>&#8364;</span> </p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star star-rating"></span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
+                        <h4>Les mouettes Hotel</h4> 
+                        <p>Night starting at 76<span>&#8364;</span> </p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star star-rating"></span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                        <h4>Hotel du port</h4> 
+                        <p>Night starting at 52<span>&#8364;</span> </p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star star-rating"></span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge">
+                        <h4>Auberge la Cannebiere</h4> 
+                        <p>Night starting at 25<span>&#8364;</span> </p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star star-rating"></span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                        <h4>Hotel du port</h4> 
+                        <p>Night starting at 52<span>&#8364;</span> </p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star star-rating"></span>
+                        </div>
+                    </a>
+                </div> <!-- end of card-container -->
+                <h3 class="panel-title">Show More</h3>
+            </div> <!-- end of accommodations-panel -->
+            <div class="most-popular-panel">
+                <h3 class="panel-title">Most Popular</h3>
+                <div class="card-container-most-popular">
+                    <div class="card-most-popular">
+                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel">
+                        <div class="card-text">
+                            <h4>Morning Sun Hotel</h4>
+                            <p>Night starting at 128<span>&#8364;</span> </p>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-most-popular">
+                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au Coeur">
+                        <div class="card-text">
+                            <h4>Au coeur de l'eau Bed and Breakfast</h4>
+                            <p>Night starting at 71<span>&#8364;</span> </p>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star star-rating"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-most-popular">
+                        <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout bleu">
+                        <div class="card-text">
+                            <h4>Tout bleu et Blanc Hotel</h4>
+                            <p>Night starting at 68<span>&#8364;</span> </p>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star star-rating"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div> <!-- end most-popular-panel -->
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+

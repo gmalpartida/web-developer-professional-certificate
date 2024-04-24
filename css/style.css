@@ -43,7 +43,7 @@ body{
     display: flex;
     flex-basis: 66%;
     flex-direction: column;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px
 }
 .most-popular-panel{
     background-color: #f2f2f2;
@@ -51,12 +51,12 @@ body{
     flex-direction: column;
     flex-basis: 33%;
     object-fit: cover;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px
 }
 .activities-panel{
     display: flex;
     flex-direction: column;            
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px
 }
 .card{
     background-color: white;
@@ -65,8 +65,10 @@ body{
     object-fit: cover;
     flex-grow: 1;
     flex-basis: 30%;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 2px lightgray;
 }
+
 .card-most-popular{
     background-color: white;
     display: flex;
@@ -78,7 +80,8 @@ body{
     height: 100px;
     flex-basis: auto;
     gap:5px;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 2px lightgray;
 }
 .card-activity{
     background-color: white;
@@ -91,8 +94,8 @@ body{
     height: 100px;
     flex-basis: auto;
     gap:5px;
-    border-radius: 15px 15px 15px 15px;
-
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 2px lightgray;
 }
 a{
     text-decoration: none;
@@ -124,7 +127,7 @@ a{
 .card-container-most-popular img{
     border-radius: 15px 0px 0px 15px;
     /* width:150px; */
-    width: 200px;
+    width: 150px;
     height: 95%;
     object-fit: cover;
     /* margin: auto; */
@@ -149,6 +152,8 @@ a{
 .card-activity-container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
 .card-single-stacked-container img{
     border-radius: 15px 15px 0px 0px;
@@ -180,7 +185,7 @@ a{
     display: flex;
     flex-direction: row;
     height: auto;
-    justify-content: space-evenly;
+    justify-content: left;
 /* 	margin: auto;
     width:95%;
 */	flex-wrap: wrap;
@@ -288,8 +293,8 @@ width: auto;
         flex-basis: 100%;
     }
     .accommodations-most-popular-panel{
-        flex-wrap: wrap-reverse;
-        flex-direction: column;
+/*         flex-wrap: wrap-reverse; */
+        flex-direction: column-reverse;
     }
     .card-most-popular{
         background-color: white;
@@ -322,4 +327,9 @@ width: auto;
     .activities-panel{
         flex-direction: column;
     }
+
+    .card-double-stacked-container img{
+        height: 300px;
+    }
+    
 }

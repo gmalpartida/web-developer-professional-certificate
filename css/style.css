@@ -186,11 +186,13 @@ a{
     flex-direction: column;
     padding: 5px;
 }
+
 .footer-container{
     margin:auto;
-    /* width: 95%; */
+    width: 100%;
     background-color: #F2F2F2;
 }
+
 .flex-footer{
     display: flex;
     flex-direction: row;
@@ -204,18 +206,20 @@ a{
 
 .footer-column{
     width:300px;
-
 }
 
 .footer-list{
+    display: flex;
+    flex-direction: column;
     list-style: none;
     justify-content: left;
+    padding: 10px;
 }
 
 .search-button{
 border-radius: 0px 10px 10px 0;
 background-color:#0065FC;
-height: 30px;
+/* height: 30px; */
 color:white;
 flex-basis: 30px;
 display: flex;
@@ -238,6 +242,7 @@ flex-basis: 300px;
 
 .search-button-icon{
     visibility: hidden;
+    width: 0px;
 /*     align-content: center;
     align-items: center;
  */}
@@ -257,22 +262,26 @@ width: 300px;
 text-align: center;
 min-height: 30px;
 border-style:none;
-border-radius: 15px;
+border-bottom: lightgray solid;
+border-top: lightgray solid;
+border-left: none;
+border-right: none;
+border-width: thin;
 }
 
 .flex-filters{
 gap: 10px;
-height: 30px;
+/* height: 30px; */
 display: flex;
 flex-direction: row;
 align-content: center;
 flex-wrap: wrap;
-margin-bottom: 10px;
+/* margin-bottom: 10px; */
 } 
 
 .filter-button{
 border-radius: 20px 15px 15px 20px;	
-height: 100%;
+/* height: 100%; */
 width:auto;
 border-style: solid;
 border-color: lightgray;
@@ -280,7 +289,7 @@ display: flex;
 text-align: center;
 align-content: center;
 align-items: center;
-padding-left: 0%;
+padding: 0 15px 0px 10px;
 display: flex;
 font-weight: bold;
 }
@@ -301,7 +310,7 @@ display: flex;
 justify-content: center;
 align-content: center;
 position: relative;
-margin-left: -2px;
+margin-left: -12px;
 }
 
 .filter-text-span{
@@ -311,10 +320,10 @@ height: 100%;
 width: auto;
 }
 
-.filter-button-text{
+/* .filter-button-text{
     padding:15px;
 }
-.most-popular-panel-title{
+ */.most-popular-panel-title{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -399,8 +408,10 @@ width: auto;
 
     .search-button-icon{
         visibility: visible;
+        width: 20px;
     }
     .search-button-text{
         visibility: hidden;
+        width: 0px;
     }
 }

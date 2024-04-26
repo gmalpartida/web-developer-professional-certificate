@@ -1,0 +1,96 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59f51cd5a8.js" crossorigin="anonymous"></script>    
+<style>
+    .search-field{
+        display: flex;
+        flex-direction: row;
+        gap:0px;
+    }
+
+    .search-field input{
+        border-style: solid;
+        border-color: lightgray;
+    }
+
+    .search-field span{
+        display: flex;
+        color: #0065FC;
+        background-color: lightgrey;
+        border-radius: 10px 0px 0px 10px;
+        flex-basis: 30px;
+        align-items: center;
+        justify-content: center;
+        padding:5px;
+    }
+
+    .search-field button{
+        display: flex;
+        border-radius: 0px 10px 10px 0px;
+        background-color: #0065FC;
+        color:white;
+    }
+    .search-field i{
+        visibility: hidden;
+        width: 1px;
+    }
+    .search-field button span{
+        display: flex;
+        visibility:visible;
+        background-color: #0065FC;
+        color:white;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 768px){
+        .search-field i{
+            visibility: visible;
+            width: 10px;
+        }
+        .search-field button span{
+            visibility: hidden;
+            flex-basis:1px;
+        }
+        .search-field button{
+            border-radius: 20px 20px 20px 20px;
+            flex-basis: 20px;
+        }
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+    <header>
+    </header>
+    <main>
+        <div><h3>Find a place for your dream vacation</h3></div>
+        <div><p>Downtown or in nature</p></div>
+        <form>
+            <div class="search-field">                    
+                <span class="fa-solid fa-location-dot"></span>
+                <input type="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></button>
+            </div>
+        </form>
+
+        <div class="flex-filters">
+            <label style="align-content: center;">Filters</label>
+            <button class="filter-button" id="money-id"><span class="filter-icon-span"><span class="fa-solid fa-money-bill-wave"></span></span><div class="filter-button-text">Low Cost</div></button>
+            <button class="filter-button" id="child-id"><span class="filter-icon-span"><span class="fa-solid fa-child-reaching"></span></span><div class="filter-button-text">Family-friendly</div></button>
+            <button class="filter-button" id="heart-id"><span class="filter-icon-span"><span class="fa-solid fa-heart"></span></span><div class="filter-button-text">Romantic</div></button>
+            <button class="filter-button" id="dog-id"><span class="filter-icon-span"><span class="fa-solid fa-dog"></span></span><div class="filter-button-text">Pets-allowed</div></button>
+        </div>
+
+        <div><p>More than 500 accommodations are available in this city</p></div>
+
+
+    </main>
+    <footer>
+    </footer>
+
+</body>
+

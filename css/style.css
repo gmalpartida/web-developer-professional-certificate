@@ -69,6 +69,15 @@ body{
     box-shadow: 3px 3px 2px lightgray;
 }
 
+.card h4{
+    padding: 10px;
+}
+.card p{
+    padding: 10px;
+}
+.card div{
+    padding: 10px;
+}
 .card-most-popular{
     background-color: white;
     display: flex;
@@ -175,6 +184,7 @@ a{
 .card-text{
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 .footer-container{
     margin:auto;
@@ -205,14 +215,32 @@ a{
 .search-button{
 border-radius: 0px 10px 10px 0;
 background-color:#0065FC;
-min-height: 30px;
+height: 30px;
 color:white;
-min-width: 30px;;
+flex-basis: 30px;
+display: flex;
+align-items: center;
+
 }
 
 .search-field{
-margin-bottom: 10px;
+/* margin-bottom: 10px; */
+display: flex;
+flex-basis: 300px;
 }
+
+.search-button-text{
+    display: flex;
+    visibility: visible;
+/*     align-content: center;
+    align-items: center;
+ */}
+
+.search-button-icon{
+    visibility: hidden;
+/*     align-content: center;
+    align-items: center;
+ */}
 
 .location-span{
 min-width: 30px;
@@ -231,12 +259,15 @@ min-height: 30px;
 border-style:none;
 border-radius: 15px;
 }
+
 .flex-filters{
 gap: 10px;
 height: 30px;
 display: flex;
 flex-direction: row;
 align-content: center;
+flex-wrap: wrap;
+margin-bottom: 10px;
 } 
 
 .filter-button{
@@ -250,6 +281,8 @@ text-align: center;
 align-content: center;
 align-items: center;
 padding-left: 0%;
+display: flex;
+font-weight: bold;
 }
 
 .filter-button:hover{
@@ -278,6 +311,9 @@ height: 100%;
 width: auto;
 }
 
+.filter-button-text{
+    padding:15px;
+}
 .most-popular-panel-title{
     display: flex;
     flex-direction: row;
@@ -287,7 +323,24 @@ width: auto;
     padding-right: 20px;
 }
 
+#money-id{
+    order:1;
+}
+
+#child-id{
+    order:2;
+}
+
+#heart-id{
+    order:3;
+}
+
+#dog-id{
+    order:4;
+}
+
 @media screen and (max-width: 768px){
+
     .card-container{
         flex-direction: column;
         flex-basis: 100%;
@@ -331,5 +384,23 @@ width: auto;
     .card-double-stacked-container img{
         height: 300px;
     }
-    
+
+    #heart-id {
+        order:2;
+    }
+    #child-id{
+        order:3;
+    }
+
+    .search-button{
+        border-radius: 10px 10px 10px 10px;
+        width: 20px;
+    }
+
+    .search-button-icon{
+        visibility: visible;
+    }
+    .search-button-text{
+        visibility: hidden;
+    }
 }

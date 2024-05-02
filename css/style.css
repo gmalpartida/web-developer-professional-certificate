@@ -127,8 +127,8 @@ a{
 }
 .card-container img{
     border-radius: 15px 15px 0px 0px;
-    max-width: 95%;
-    height: auto;
+    width: 95%;
+    height: 100px;
     object-fit: cover;
     margin: auto;
     padding-top: 5px;
@@ -352,6 +352,14 @@ width: auto;
     order:4;
 }
 
+.star-rating{
+    color:lightgrayj
+}
+
+.checked{
+    color:#0065FC
+}
+
 @media screen and (max-width: 768px){
 
     .card-container{
@@ -428,4 +436,19 @@ width: auto;
             width: 55%;
         }
  */        
+}
+
+@media screen and (max-width: 992px){
+    .checked{
+        font-size: small;
+    }
+    .star-rating{
+        font-size: small;
+    }
+    .card-text p{
+        font-size: small;
+    }
+    .card-text h4{
+        font-size:12px;
+    }
 }

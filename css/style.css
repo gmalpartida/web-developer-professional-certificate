@@ -274,15 +274,20 @@ gap: 10px;
 /* height: 30px; */
 display: flex;
 flex-direction: row;
-align-content: center;
-flex-wrap: wrap;
+/* align-content: center; */
+/* flex-wrap: wrap; */
 /* margin-bottom: 10px; */
 } 
 
+.money-child-filter{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .filter-button{
 border-radius: 20px 15px 15px 20px;	
 /* height: 100%; */
-width:auto;
+/* width:15%; */
 border-style: solid;
 border-color: lightgray;
 display: flex;
@@ -290,7 +295,6 @@ text-align: center;
 align-content: center;
 align-items: center;
 padding: 0 15px 0px 10px;
-display: flex;
 font-weight: bold;
 }
 
@@ -414,4 +418,14 @@ width: auto;
         visibility: hidden;
         width: 0px;
     }
+    .flex-filters{
+        flex-direction: column;
+/*         align-content: left; */
+        justify-content: left;
+/*         width: auto;
+ */        } 
+/*         .filter-button{
+            width: 55%;
+        }
+ */        
 }

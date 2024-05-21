@@ -21,14 +21,17 @@ body{
 }
 
 .header-link-item{
-    padding: 10px;	
+    padding: 20px;	
 }
 
-.header-link-item a:active{
-    color: black;
+.header-link-item a{
+    border-top: solid 1px inherit;
+    padding-top: 20px;
 }
+
 .header-link-item a:visited{
     color: blue;
+    border-top-color: blue;
 }
 
 .logo-img{

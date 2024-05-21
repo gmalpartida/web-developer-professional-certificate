@@ -25,7 +25,7 @@ body{
 }
 
 .header-link-item a{
-    border-top: solid 1px inherit;
+    border-top: solid 1px white;
     padding-top: 20px;
 }
 

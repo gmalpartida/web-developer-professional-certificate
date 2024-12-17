@@ -1,1 +1,1 @@
-Projects for OpenClassrooms Web Development certificate.
+Projects for OpenClassrooms Web Developer Professional certificate.

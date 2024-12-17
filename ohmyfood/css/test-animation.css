@@ -1,0 +1,117 @@
+section {
+  margin: 50px auto;
+}
+
+.btn-shift {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid black;
+  border-radius: 20px 20px 20px 20px;
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.btn-shift p {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-shift span {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  border-radius: 0px 20px 20px 0px;
+  transform: translateX(100px);
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn-shift span svg {
+  width: 30px;
+  height: 30px;
+  transform: rotate(0deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn-shift:hover span {
+  transform: translateX(0px);
+}
+.btn-shift:hover span svg {
+  transform: rotate(360deg);
+}
+
+.menu-item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid black;
+  border-radius: 20px 20px 20px 20px;
+  width: 400px;
+  height: 100px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.menu-item-card:hover .menu-item-text {
+  width: 300px;
+}
+.menu-item-card:hover span {
+  /*     width: 100px; */
+  width: 100px;
+}
+.menu-item-card:hover span svg {
+  transform: rotate(720deg);
+}
+
+.menu-item-card span {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  width: 0px;
+  transition: width 1s ease-in-out;
+}
+
+.menu-item-card span svg {
+  height: 30px;
+  width: 30px;
+  filter: invert(100%);
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(0deg);
+  border-radius: 50px 50px 50px 50px;
+  color: aquamarine;
+}
+
+.menu-item-text {
+  display: flex;
+  flex-direction: column;
+  /*   width: 300px;
+   */
+  height: 100px;
+  outline: 1px solid red;
+  width: 400px;
+  transition: width 1s ease-in-out;
+}
+
+.menu-item-description-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item-title {
+  padding-left: 10px;
+}
+
+.menu-item-description-price p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*# sourceMappingURL=test-animation.css.map */
